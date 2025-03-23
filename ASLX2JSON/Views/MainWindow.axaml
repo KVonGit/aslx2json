@@ -1,0 +1,12 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="ASLX2JSON.Views.MainWindow"
+        Title="ASLX2JSON">
+    <StackPanel>
+        <TextBox Name="XmlPathBox" Width="200" Margin="10"/>
+        <TextBox Name="JsonPathBox" Width="200" Margin="10"/>
+        <Button Name="BrowseXmlButton"  Content="ASLX (Input)" Width="100" Margin="10"/>
+        <Button Name="BrowseJsonButton" Content="JSON (Output)" Width="100" Margin="10"/>
+        <Button Name="ConvertButton" Content="Convert" Width="100" Margin="10"/>
+    </StackPanel>
+</Window>

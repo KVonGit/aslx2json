@@ -1,7 +1,8 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="ASLX2JSON.Views.MainWindow"
-        Width="800" Height="400">
+        Width="800" Height="400"
+        Title="ASLX2JSON">
     <Window.Styles>
         <Style Selector="Button">
             <Setter Property="Background" Value="#007ACC"/>
@@ -15,22 +16,22 @@
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="BrowseXmlButton" Content="Browse XML" />
         </StackPanel>
-		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-			<TextBlock x:Name="XmlFileNameTextBlock" Margin="10,0,0,0" />
-		</StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="XmlFileNameTextBlock" Margin="10,0,0,0" />
+        </StackPanel>
         <TextBox x:Name="XmlPathBox" Width="200" Margin="0,10,0,0" />
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="BrowseJsonButton" Content="Browse JSON" />
         </StackPanel>
-		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-			<TextBlock x:Name="JsonFileNameTextBlock" Margin="10,0,0,0" />
-		</StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="JsonFileNameTextBlock" Margin="10,0,0,0" />
+        </StackPanel>
         <TextBox x:Name="JsonPathBox" Width="200" Margin="0,10,0,0" />
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <Button x:Name="ConvertButton" Content="Convert" />
         </StackPanel>
-		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-			<TextBlock x:Name="ConversionMessageTextBlock" Margin="10,0,0,0" />
-		</StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock x:Name="ConversionMessageTextBlock" Margin="10,0,0,0" />
+        </StackPanel>
     </StackPanel>
 </Window>

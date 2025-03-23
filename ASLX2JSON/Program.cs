@@ -9,7 +9,7 @@ class Program
     {
         if (args.Length < 1)
         {
-            Console.WriteLine("Usage: xmltojson.exe <input.xml> [-o <output.json>]");
+            Console.WriteLine("Usage: aslx2json.exe <input.xml> [-o <output.json>]");
             return;
         }
 

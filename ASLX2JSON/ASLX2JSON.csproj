@@ -6,11 +6,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier> <!-- Change this to the appropriate RID for your target OS -->
+    <SelfContained>true</SelfContained>
   </PropertyGroup>
 
   <ItemGroup>
     <AvaloniaXaml Remove="App.axaml" />
-    <AvaloniaXaml Remove="Views\MainWIndow.axaml" />
+    <AvaloniaXaml Remove="Views\MainWindow.axaml" />
   </ItemGroup>
 
   <ItemGroup>

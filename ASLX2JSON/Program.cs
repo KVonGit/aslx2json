@@ -1,5 +1,5 @@
 ﻿using System;
-using ASLX2JSON;
+using aslx2json;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.ReactiveUI;

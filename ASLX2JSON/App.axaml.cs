@@ -1,9 +1,9 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using ASLX2JSON.Views;
+using aslx2json.Views;
 
-namespace ASLX2JSON
+namespace aslx2json
 {
     public class App : Application
     {

@@ -13,7 +13,7 @@ using MsBox.Avalonia.Models; // Add this using directive
 using Newtonsoft.Json;
 using MsBox.Avalonia.Dto;
 
-namespace ASLX2JSON.Views
+namespace aslx2json.Views
 {
     public class MainWindow : Window
     {

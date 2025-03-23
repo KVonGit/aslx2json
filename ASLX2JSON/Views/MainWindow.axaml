@@ -1,12 +1,36 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="ASLX2JSON.Views.MainWindow"
-        Title="ASLX2JSON">
-    <StackPanel>
-        <TextBox Name="XmlPathBox" Width="200" Margin="10"/>
-        <TextBox Name="JsonPathBox" Width="200" Margin="10"/>
-        <Button Name="BrowseXmlButton"  Content="ASLX (Input)" Width="100" Margin="10"/>
-        <Button Name="BrowseJsonButton" Content="JSON (Output)" Width="100" Margin="10"/>
-        <Button Name="ConvertButton" Content="Convert" Width="100" Margin="10"/>
+        Width="800" Height="400">
+    <Window.Styles>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+    </Window.Styles>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="BrowseXmlButton" Content="Browse XML" />
+        </StackPanel>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="XmlFileNameTextBlock" Margin="10,0,0,0" />
+		</StackPanel>
+        <TextBox x:Name="XmlPathBox" Width="200" Margin="0,10,0,0" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="BrowseJsonButton" Content="Browse JSON" />
+        </StackPanel>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="JsonFileNameTextBlock" Margin="10,0,0,0" />
+		</StackPanel>
+        <TextBox x:Name="JsonPathBox" Width="200" Margin="0,10,0,0" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="ConvertButton" Content="Convert" />
+        </StackPanel>
+		<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+			<TextBlock x:Name="ConversionMessageTextBlock" Margin="10,0,0,0" />
+		</StackPanel>
     </StackPanel>
 </Window>
